@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FFA500</color>
+    <color name="easy_level">#777788</color>
+    <color name="normal_level">#33AABB</color>
+    <color name="hard_level">#CC4466</color>
+    <color name="chaos_level">#DDBB88</color>
+    <color name="extreme_level">#EE3366</color>
 </resources>

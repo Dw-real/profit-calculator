@@ -1,10 +1,10 @@
-package com.example.profitcalcualtor.ui.home
+package com.example.profitcalcualtor.ui.select
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class SelectViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is home Fragment"
