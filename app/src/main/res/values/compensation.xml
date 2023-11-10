@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compensation_items">
+        <item>수에큐</item>
+        <item>반빨별</item>
+        <item>반파별</item>
+        <item>영환불</item>
+        <item>강환불</item>
+        <item>검환불</item>
+        <item>놀긍</item>
+        <item>태정</item>
+        <item>프악 스크롤</item>
+        <item>프펫 스크롤</item>
+        <item>매지컬 무기 주문서</item>
+        <item>소형 경축비</item>
+        <item>마깃안</item>
+        <item>루컨마</item>
+        <item>블랙 하트</item>
+        <item>몽벨</item>
+        <item>마도서</item>
+        <item>거공</item>
+        <item>고근</item>
+        <item>창뱃</item>
+        <item>커포링</item>
+        <item>미트라</item>
+        <item>연마석</item>
+        <item>데브펜</item>
+        <item>에스텔라 이어링</item>
+        <item>트왈마</item>
+        <item>가엔링</item>
+        <item>아무상</item>
+        <item>아방상</item>
+        <item>앱방상</item>
+        <item>리레</item>
+        <item>웨펖</item>
+        <item>컨티</item>
+    </string-array>
+</resources>

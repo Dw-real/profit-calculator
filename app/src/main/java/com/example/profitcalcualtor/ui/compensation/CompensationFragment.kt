@@ -1,17 +1,13 @@
 package com.example.profitcalcualtor.ui.compensation
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.profitcalcualtor.databinding.FragmentCompensationBinding
-import com.example.profitcalcualtor.databinding.ItemCompensationListBinding
 
 class CompensationFragment : Fragment() {
 
@@ -23,6 +19,9 @@ class CompensationFragment : Fragment() {
     private lateinit var compensationAdapter: CompensationAdapter
     private val compensationList: ArrayList<String> = ArrayList()
 
+    private var num = 0
+
+    @SuppressLint("NotifyDataSetChanged")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -31,7 +30,6 @@ class CompensationFragment : Fragment() {
         _binding = FragmentCompensationBinding.inflate(inflater, container, false)
 
         val addBtn = binding.addBtn
-        val deleteBtn = binding.deleteBtn
 
         compensationAdapter = CompensationAdapter(compensationList)
 
@@ -43,8 +41,9 @@ class CompensationFragment : Fragment() {
 
         // 보상 목록 추가
         addBtn.setOnClickListener {
-            compensationList.add("hi")
-            compensationAdapter.notifyDataSetChanged()
+            num++
+            compensationList.add("List ${num}")
+            compensationAdapter.notifyItemInserted(compensationList.size - 1)
         }
 
         return binding.root
