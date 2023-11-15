@@ -7,5 +7,5 @@
     <string name="compensation">보상</string>
     <string name="price">개당 가격</string>
     <string name="add">+</string>
-    <string name="delete">-</string>
+    <string name="sum">합계</string>
 </resources>

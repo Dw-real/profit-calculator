@@ -17,9 +17,7 @@ class CompensationFragment : Fragment() {
 
     // RecyclerView에 사용할 어댑터 객체와 데이터를 담을 ArrayList 선언
     private lateinit var compensationAdapter: CompensationAdapter
-    private val compensationList: ArrayList<String> = ArrayList()
-
-    private var num = 0
+    private val compensationList: ArrayList<Pair<Int, Int>> = ArrayList()
 
     @SuppressLint("NotifyDataSetChanged")
     override fun onCreateView(
@@ -30,6 +28,7 @@ class CompensationFragment : Fragment() {
         _binding = FragmentCompensationBinding.inflate(inflater, container, false)
 
         val addBtn = binding.addBtn
+        //val totalPrice = binding.totalPrice
 
         compensationAdapter = CompensationAdapter(compensationList)
 
@@ -41,10 +40,10 @@ class CompensationFragment : Fragment() {
 
         // 보상 목록 추가
         addBtn.setOnClickListener {
-            num++
-            compensationList.add("List ${num}")
+            compensationList.add(Pair(0,0))
             compensationAdapter.notifyItemInserted(compensationList.size - 1)
         }
+
 
         return binding.root
     }
