@@ -1,4 +1,4 @@
-package com.example.profitcalcualtor.ui.compensation
+package com.example.profitcalcualtor.ui.reward
 
 import com.example.profitcalcualtor.R
 import android.view.LayoutInflater
@@ -7,8 +7,8 @@ import android.widget.ArrayAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.profitcalcualtor.databinding.ItemCompensationListBinding
 
-class CompensationAdapter(private val data: ArrayList<Pair<Int, Int>>) :
-    RecyclerView.Adapter<CompensationAdapter.CompensationViewHolder>() {
+class RewardAdapter(private val data: ArrayList<Pair<Int, Int>>) :
+    RecyclerView.Adapter<RewardAdapter.CompensationViewHolder>() {
 
     var totalSum: Int = 0
 
@@ -18,7 +18,7 @@ class CompensationAdapter(private val data: ArrayList<Pair<Int, Int>>) :
         return CompensationViewHolder(binding)
     }
 
-    override fun onBindViewHolder(holder: CompensationAdapter.CompensationViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: RewardAdapter.CompensationViewHolder, position: Int) {
         holder.bind(data[position])
         holder.bindEditTextListeners(position)
     }

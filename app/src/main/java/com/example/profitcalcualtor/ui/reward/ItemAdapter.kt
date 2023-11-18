@@ -1,4 +1,4 @@
-package com.example.profitcalcualtor.ui.compensation
+package com.example.profitcalcualtor.ui.reward
 
 import android.content.Context
 import android.view.LayoutInflater

@@ -13,9 +13,9 @@
 
     <fragment
         android:id="@+id/navigation_compensation"
-        android:name="com.example.profitcalcualtor.ui.compensation.CompensationFragment"
+        android:name="com.example.profitcalcualtor.ui.reward.RewardFragment"
         android:label="@string/title_compensation"
-        tools:layout="@layout/fragment_compensation" />
+        tools:layout="@layout/fragment_reward" />
 
     <fragment
         android:id="@+id/navigation_account"

@@ -1,10 +1,10 @@
-package com.example.profitcalcualtor.ui.compensation
+package com.example.profitcalcualtor.ui.reward
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class CompensationViewModel : ViewModel() {
+class RewardViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is dashboard Fragment"
